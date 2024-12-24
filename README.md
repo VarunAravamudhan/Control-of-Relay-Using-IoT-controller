@@ -1,4 +1,6 @@
-# Control-of-Relay-Using-IoT-controller
+## Name:Varun A 
+## RegNo: 24900420
+## Control-of-Relay-Using-IoT-controller
 
 ##  AIM:
 To control the Relay using Arduino controller
@@ -39,9 +41,37 @@ In this Arduino  Relay Control Circuit we have used Arduino to control the relay
 
 ## PROGRAM:
 
+```
+// Arduino Relay Control Code
+int relayPin=6;
+//int relayPin=A0;
+#define interval 2000
+void setup() {
+  // put your setup code here, to run once:
+pinMode(relayPin, OUTPUT);
+}
+void loop()
+{
+  // put your main code here, to run repeatedly:
+digitalWrite(relayPin, HIGH);
+delay(interval);
+digitalWrite(relayPin, LOW);
+delay(interval);
+/*analogWrite(relayPin, 12);
+delay(interval);
+analogWrite(relayPin, 0);
+delay(interval); */
+}
+```
+
 ## CIRCUIT DIAGRAM:
 
+
+![Screenshot 2024-11-12 094703](https://github.com/user-attachments/assets/a7080241-1b38-4ff9-b0da-6fc830a66342)
+
 ## OUTPUT:
+
+![Screenshot 2024-11-12 094745](https://github.com/user-attachments/assets/06cca47e-8b1a-42bd-82ea-ab34ddda9406)
 
 ## RESULT:
 
